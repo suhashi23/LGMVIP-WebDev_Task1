@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins&family=Reem+Kufi&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    z-index:9; 
+    margin: 25px 0;
+    margin-left: 15%;
+    margin-right: 20%;
+    position: absolute;
+    z-index: 10;
+}
+.nav-item{
+    color: black;
+}
+
+#navbar{
+    transition: 0.5s;
+}
+.header{
+    transition: 0.5s;
+}
+.navbar-collapse{
+    margin-left: 35%;
+}
+.navbar-brand{
+    margin-left: 0%;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #000000 ;
+} 
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #000000 !important; 
+}
+.carousel-item{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide-caption{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.carousel-caption{
+    padding-bottom: 150px;
+    font-family: poppins;
+    text-align: left;
+}
+/* Welcome page  */
+.p{
+    flex-direction: column;
+}
+.heading h1{
+    text-align: center;
+}
+.heading p{
+    margin-left: 15%;
+    font-size: 2rem;
+}
+.container-fluid{
+    padding: 5% 12%;
+}
+#welcome{
+    background-color:white;
+}
+.heading{
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: space-around;
+}
+.umbrella{
+    height: 300px;
+    margin-right: 50px;
+}
+.content{
+    align-items: stretch;
+}
+#welcome h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2%;
+    font-weight: bold;
+}
+.feature-circle {
+    padding: 4.5%;
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon-top{
+    text-align: left;
+    color: #ef8172;
+}
+.feature-title {
+    font-size: 1.5rem;
+  }
+.img{
+    height: 15%;
+    margin-bottom: 30%;
+    margin-top: 2%;
+}
+hr{
+    width: 350px;
+}
+.projects h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -60%;
+}
+.card-group{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.card-body{
+    background-color: rgb(180, 175, 175);
+}
+
+/* Pricing section */
+.pricing{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+
+.pricing h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.pricing h3{
+    font: caption;
+    font-weight: 900;
+}
+.pricing p{
+    font-weight: bold;
+}
+.price{
+    color: gainsboro;
+}
+.pricing-section{
+    margin-left: 20%;
+    margin-top: 40px;
+}
+.video{
+    background-color: rgb(77, 0, 128);
+}
+.video h1{
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+.videos{
+    width: 410px;
+    height: 300px;
+    margin-left: 2%;
+    margin-bottom: 50px;
+}
+
+/* Zippy Team */
+
+.zippy-team h1{
+    text-align: center;
+}
+
+.zippy-team{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+} 
+
+.team-container{
+    display: flex; 
+    position: relative;
+    padding: 1px;
+    width: 50%;
+    margin:auto;
+} 
+
+.team-container .circle{
+    flex-basis: 31%;
+    position: relative;
+    width:20%;
+    margin: auto;
+    height: 250px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.team-container .circle:hover{
+    z-index: 1;
+} 
+
+.team-container  .circle .profile{
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    height: 80%;
+}
+.team-container  .circle .profile::before{
+    content: '';
+    clip-path: circle();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #654b8f;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+    opacity: 0;
+  
+}
+.team-container  .circle:hover .profile::before{
+    opacity: 1;
+}
+  
+.team-container  .circle .profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit:cover;
+    clip-path: circle();
+    overflow: hidden;
+}
+.team-container  .circle .team-content{
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    z-index: 1;
+    display: block;
+    padding: 2px;
+    align-items: flex-end;
+}
+.team-container  .circle .team-content h3{
+    color: #fff;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+}
+.team-container  .circle:hover .team-content h3{
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+.team-container  .circle:hover .team-content p{
+    color: wheat;
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+  
+}
+.team-container .circle .name p{
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: -17%;
+}
+
+.team-container .circle .name h3{
+    font-size: 20px;
+    margin-top: 90%;
+    margin-left: -19%;
+}
+
+@media(max-width: 700px){
+    .zippy-team-{
+        width:100%;
+        height: 500px;
+        margin: auto;
+        padding-top: 100px;
+    }
+    
+    .team-container{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+    .team-container .circle{
+        flex-basis: 31%;
+        position: relative;
+        width: 70%;
+        height: 220px;
+        overflow: hidden;
+        transition: 0.5s;
+        align-items: center;
+        
+       
+    }
+    .team-container .circle .profile{
+        position: absolute;
+        width: 100%;
+        margin-top: 20px;
+    }
+  
+    .team-container .circle .team-content{
+        position: absolute;
+        top: 60px;
+        left: 11px;
+        z-index: 1;
+        display: block;
+        padding: 2px;
+        align-items: flex-end;
+    }
+}
+
+/* Life of zippy section */
+.life h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} 
+.life .groupimg{
+    width: 500px;
+    height: 300px;
+    margin-left: 32%;
+}
+.life{
+    background-color: rgb(197, 191, 191);
+}
+.newsletter {
+    background-image: url(newsletter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.newsletter h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+} 
+.newsletter .input-group{
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Blog section */
+
+.blog h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} 
+.blogp{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} 
+
+/* contact section */
+
+.contact h1{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-right: 35%;
+}
+.contact label{
+    font-weight: bold;
+}
+
+.contact .contact-container{
+    width: 55%;
+    margin-left: 25%;
+    text-align: left;
+}
+.form{
+    background-color: rgb(185, 156, 24);
+    position: relative;
+    margin-left: 51%;
+}
+.map{
+    width: 73%;
+    height: 520px;
+    position: absolute;
+    top: 487.6%;
+}
+.box{
+    width: 100%;
+}
+.btnsend{
+    width: 93%;
+    margin-left: 14px;
+}
+
+/* Footer section start */
+
+.foot{
+    padding-top: 200px;
+    }
+    .footer__container {
+      background-color: #fcfcfc;
+      position: sticky;
+      left: 0;
+      bottom: 0;
+      height: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: auto;
+      z-index: 1;
+    
+    }
+    
+    #footer__logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    }
+    
+    .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .footer__link--wrapper {
+    display: flex;
+    }
+    
+    .footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    }
+    
+    .footer__link--items h2 {
+    margin-bottom: 16px;
+    color: rgb(15, 15, 15);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    }
+    
+    .footer__link--items a {
+    color: rgb(24, 23, 23);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: 0.3 ease-out;
+    }
